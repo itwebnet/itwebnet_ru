@@ -3,6 +3,7 @@ import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLi
 import { Link } from 'react-router-dom';
 import { LoginMenu } from './api-authorization/LoginMenu';
 import './NavMenu.css';
+import  logo  from '../img/logo.svg';
 
 export class NavMenu extends Component {
   constructor(props) {
@@ -23,37 +24,28 @@ export class NavMenu extends Component {
 
   render () {
     return (
-      <div>        
-        <Navbar color="light" light expand="md" fixed='top' fill>        
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <div>
+        <Navbar color='white' light expand="md" fixed='top' fill >
+          <Container>
+          <NavbarBrand href="/"><img width={85} alt='ITWebNet' src={logo} /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="m-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/components/">Главная</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <NavLink href="/components/">О Компании</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="/components/">Услуги</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/">Контакты</NavLink>
+              </NavItem>
             </Nav>
-          </Collapse>          
+          </Collapse>
+          </Container>          
         </Navbar>        
       </div>
     );

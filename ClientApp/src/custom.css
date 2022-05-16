@@ -14,7 +14,7 @@ code {
 }
 
 body{
-  padding-top: 100px;
+  padding-top: 145px;
 }
 
 :root {
@@ -25,7 +25,7 @@ body{
 .Site {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 85vh;
 }
 
 .Site-content {

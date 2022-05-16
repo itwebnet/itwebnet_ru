@@ -4,7 +4,7 @@ export class Footer extends Component
 {
     render() {
         return(
-            <div>footer</div>
+            <div style={{border: 'solid 1px green', height:80 }}>footer</div>
         )
     }
 }

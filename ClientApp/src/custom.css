@@ -12,3 +12,13 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.bottom{
+  position: absolute;
+  bottom: 0px;
+}
+
+.layout{
+  position: relative;
+  padding-bottom: 50px;
+}

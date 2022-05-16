@@ -23,8 +23,8 @@ export class NavMenu extends Component {
 
   render () {
     return (
-      <div>
-        <Navbar color="light" light expand="md" fixed='top'>
+      <div>        
+        <Navbar color="light" light expand="md" fixed='top' fill>        
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -53,8 +53,8 @@ export class NavMenu extends Component {
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
-          </Collapse>
-        </Navbar>
+          </Collapse>          
+        </Navbar>        
       </div>
     );
   }

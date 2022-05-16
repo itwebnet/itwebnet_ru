@@ -96,7 +96,7 @@ namespace itwebnet_ru.Data.Migrations
 
                     b.Property<string>("Data")
                         .IsRequired()
-                        .HasMaxLength(50770)
+                        .HasMaxLength(50330)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
@@ -145,7 +145,7 @@ namespace itwebnet_ru.Data.Migrations
 
                     b.Property<string>("Data")
                         .IsRequired()
-                        .HasMaxLength(50770)
+                        .HasMaxLength(50330)
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("DataProtected")
@@ -187,7 +187,7 @@ namespace itwebnet_ru.Data.Migrations
 
                     b.Property<string>("Data")
                         .IsRequired()
-                        .HasMaxLength(50770)
+                        .HasMaxLength(50330)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")

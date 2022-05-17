@@ -1,10 +1,14 @@
 import { Component } from "react";
 
+
 export class Footer extends Component
 {
     render() {
         return(
-            <div style={{border: 'solid 1px green', height:80 }}>footer</div>
+            <footer>
+                <div id="leftFooter">&copy; 2000 - {new Date().getFullYear()}, ITWebNet</div>
+                <div id="rightFooter">rightFooter</div>
+            </footer>
         )
     }
 }

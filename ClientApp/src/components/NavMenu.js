@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Nav, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
+import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Nav, 
+  UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { LoginMenu } from './api-authorization/LoginMenu';
 import './NavMenu.css';
@@ -25,8 +26,8 @@ export class NavMenu extends Component {
   render () {
     return (
       <div>
-        <Navbar color='white' light expand="md" fixed='top' fill >
-          <Container>
+        <Navbar color='light' light expand="md" fixed='top' fill >
+          <Container style={{border:'1px green solid'}}>
           <NavbarBrand href="/"><img width={85} alt='ITWebNet' src={logo} /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

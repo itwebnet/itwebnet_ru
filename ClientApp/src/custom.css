@@ -5,17 +5,42 @@
 }
 
 @font-face {
+	font-family: 'RubikMedium'; 
+	src: url(../src/fonts/RubikMedium.ttf); 
+}
+
+
+@font-face {
 	font-family: 'IbmPlexMono'; 
 	src: url(../src/fonts/IbmPlexMono.ttf); 
 }
 
-a {
-  color: #0366d6;
+@font-face {
+	font-family: 'IbmPlexMonoRegular'; 
+	src: url(../src/fonts/IBMPlexMono-Regular.ttf); 
 }
 
-code {
-  color: #E01A76;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body, #root
+{ 
+    height: 100%;
+} 
+
+body {  
+  font-family: IbmPlexMonoRegular;
+}
+
+
+a {
+  color: #0A2235;
+}
+
 
 .btn-primary {
   color: #fff;
@@ -23,87 +48,164 @@ code {
   border-color: #ffffff;  
 }
 
-
-.video{
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  position: absolute;
-  margin-top: 99px;
-}
-
-.bannertext
-{
-  font-family: RubikBold;
-  position:absolute;
-  margin: 0 15% 0 15%;  
-  z-index: 1;
-  padding-top: 200px;
-  color: #fff;
-}
-
-.bantxt2{
-  font-family: IbmPlexMono;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 20px;  
-}
-
 .orderBtn{
   font-family: IbmPlexMono;
   background-color: #3777BC;
+
 }
 
 
-html, body, #root
-{ 
-    height: 100%;
-} 
 
-html {
-  /* Растягиваем документ на всю высоту окна */
-  height: 100%;
+.wrapper {
+  height: 100vh;
+  display: flex;  
+  flex-direction: column;
 }
 
-body {
-  position: relative;
-  margin: 0;
-  color: #fff;
-  /* Растягиваем body по высоте html */
-  min-height: 100%;
-  font-family: IbmPlexMono, sans-serif; 
-  text-rendering: optimizeSpeed;     
-  line-height: 1.5;
+.header{
+  height: 110px;  
+  min-height: 110px;
 }
 
-main {
-   /* Выставляем отступ с высотой footer */
-  padding-bottom: 30px;
-  background: red;
+
+.main {
+  flex: 1;
+  
 }
 
-footer {
-  /* Позиционируем footer внизу main */
-  position: absolute;
-  bottom: 0;
+.menuLink{
+  color: #ffffff;
+}
+
+#leftFooter{float: left; padding-left: 20px; padding-top: 10px;}
+#rightFooter{float: right; padding-top: 30px; padding-right: 20px;}
+.footer {
+  min-height: 80px;  
+  background-color: #0A2235;
+  color: #ffffff;
+}
+.centerFooter {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.greenLink{
+  color: #5ea57a;  
+  font-weight: bold;
+}
+
+.video-container {
+  height: 400px;
   width: 100%;
-  /* Высота footer */
-  height: 30px;
-  background:#0A2235;
-  height: 80px;
-}  
-
-#leftFooter{
-  float: left;
-  margin-left: 20px;
-  margin-top: 20px;  
+  position: relative;  
+  
 }
 
-#rightFooter{
-  float: right;
-  margin-top: 20px;
-  margin-right: 20px;
+.video-container video {
+width: 100%;
+height: 100%;
+position: absolute;
+object-fit: cover;
+z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;      
+  
+}
+
+
+.caption h1{
+  
+  margin: 0 auto;
+  width: 90%;  
+  height: 50%;   
+  font-family: RubikBold;
+  
+  color: #ffffff;  
+
+  
+}
+
+
+.cap2{
+  margin: 0 auto;
+  width: 90%; 
+  height: 30%;
+  font-family: IbmPlexMonoRegular;
+  color: #ffffff;    
+  font-size: 1.1rem;   
+  padding-top: 20px;
+}
+
+.cap3{
+  margin: 0 auto;  
+  width: 90%;    
+  height: 20%;
+}
+
+
+/* Что мы делаем */
+
+.whatwedo {
+  margin: 0 auto;  
+  padding-top: 20px;  
+  width: 67%;
 }
 
 
 
+.whatwedo h1 {
+  color: black;
+  font-family: RubikBold;
+  padding-top: 40px;
+}
+
+
+.offerlist
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;  
+  padding-top: 40px;
+}
+
+.offerItem{
+  width: 300px;  
+  font-family: RubikMedium;
+  padding-top: 40px;  
+}
+
+.offerName{
+  padding-top: 40px;  
+}
+
+.offerDescription{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: IbmPlexMonoRegular;
+}
+
+
+/* Медиа */
+@media (min-width: 600px) {
+  .caption h1 {font-size: 40px; }  
+  .whatwedo {
+    width: 90%;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .caption h1 {font-size: 2.8rem; width: 67%;}
+  .cap2 {width: 67%; font-size: 2rem;}
+  .cap3 { width: 67%;}
+  .whatwedo {
+    width: 67%;  }
+
+}

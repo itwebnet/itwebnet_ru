@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Nav, 
-  UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import { LoginMenu } from './api-authorization/LoginMenu';
+import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Nav
+   } from 'reactstrap';
 import './NavMenu.css';
 import  logo  from '../img/logo.svg';
 
@@ -26,23 +24,23 @@ export class NavMenu extends Component {
   render () {
     return (
       <div>
-        <Navbar color='light' light expand="md" fixed='top' fill >
-          <Container style={{border:'1px green solid'}}>
-          <NavbarBrand href="/"><img width={85} alt='ITWebNet' src={logo} /></NavbarBrand>
+        <Navbar color='white' light expand="md" fixed='top' fill >
+          <Container>
+          <NavbarBrand href="/"><img height={80} alt='ITWebNet' src={logo} /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="m-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Главная</NavLink>
+                <NavLink href="/components/" style={{color:'#0A2235'}}>Главная</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">О Компании</NavLink>
+                <NavLink href="/about/" style={{color:'#0A2235'}}>О Компании</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">Услуги</NavLink>
+                <NavLink href="/services/" style={{color:'#0A2235'}}>Услуги</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">Контакты</NavLink>
+                <NavLink href="/contacts/" style={{color:'#0A2235'}}>Контакты</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

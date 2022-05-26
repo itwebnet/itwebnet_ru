@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import video from '../img/video.mp4';
-import { Button } from 'reactstrap';
+import { Button, Col, Container, Row } from 'reactstrap';
 import { OrderButton } from './OrderProjectBtn';
+import  OfferItem from './OfferItem';
+import develop from '../img/develop.svg';
+
 
 export class Home extends Component {
   static displayName = Home.name;
@@ -9,23 +12,42 @@ export class Home extends Component {
   render () {
     return (
       <div>
-        <div className='bannertext'>
-          <h1>Разработка программного обеспечения и<br/>
-          информационных систем</h1>
-          <div className='bantxt2'>
-            Комплексный сервис для корпоративных клиентов
-          </div>
-          <div>
-            <br/><br/>
-            <OrderButton/> 
-          </div>
-        </div>
-
-        <video autoPlay loop className='video'>
-          <source src={video} type='video/mp4'/>
-        </video>
-
+<div className='video-container'>
+    
+    <video autoplay muted loop>
+        <source src={video} type='video/mp4'/>
+    </video>
+    
+    <div className = 'caption'>              
+        <h1><br/>Разработка программного обеспечения и <br/>информационных систем</h1>
+      
+      <div className='cap2'>
+        Комплексный сервис для корпоративных клиентов
       </div>
+      <div className='cap3'>
+          <OrderButton/> 
+      </div>
+      <div className='cap3'>          
+      </div>
+    </div>
+
+</div>
+
+<div className='whatwedo'>
+  <h1>Что мы делаем</h1>
+  <div className='offerlist'>
+    <OfferItem name="Разработка ПО" img={develop} title="Разработка программного обеспечения"/>
+    <OfferItem name="ИТ поддержка" img={develop} title="Техническая поддержка существующих решений"/>
+    <OfferItem name="ИТ рекрутинг" img={develop} title="Подбор ИТ специалиста"/>
+    <OfferItem name="ИТ консалтинг" img={develop} title="Разработка ИТ-стратегии предприятия, внедрение ITSM и систем управления проектами"/>
+    <OfferItem name="Решения" img={develop} title="Готовые продукты для бизнеса"/>
+    <OfferItem name="Обучение" img={develop} title="Курсы по программированию"/>
+  </div>
+</div>
+
+</div>
+
     );
   }
 }
+

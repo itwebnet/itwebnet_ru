@@ -6,15 +6,25 @@ import { NavMenu } from './NavMenu';
 export class Layout extends Component {
   static displayName = Layout.name;
 
-  render () {
+  render() {
     return (
-      <div id='root'>
-        <NavMenu />
-        <main>
-          {this.props.children}
-        </main>         
-        <Footer/>
+      <div>
+        <div className='wrapper'>
+          <div className='header'>
+            <NavMenu />
+          </div>
+          <div className='main'>
+            {this.props.children}
+          </div>
+          <Footer />
+        </div>
       </div>
     );
   }
 }
+
+/*
+
+
+
+*/

@@ -22,10 +22,9 @@ export class NavMenu extends Component {
 
 
   render () {
-    return (
-      <div>
-        <Navbar color='white' light expand="md" fixed='top' fill >
-          <Container>
+    return (      
+        <Navbar color='white' light expand="lg" fixed='top' fill>
+          <Container className='cont'>
           <NavbarBrand href="/"><img height={80} alt='ITWebNet' src={logo} /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -46,7 +45,6 @@ export class NavMenu extends Component {
           </Collapse>
           </Container>          
         </Navbar>        
-      </div>
     );
   }
 }

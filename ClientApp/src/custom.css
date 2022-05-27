@@ -27,25 +27,98 @@
   box-sizing: border-box;
 }
 
-html, body, #root
-{ 
-    height: 100%;
-} 
-
-body {  
+body{
   font-family: IbmPlexMonoRegular;
+  width: 100%;
+  height: 100vh;
 }
 
 
-a {
-  color: #0A2235;
+.layout{
+  display: grid;  
+  height: 100vh;
+  grid-template-rows: 110px auto 100px;
+}
+
+.layout > div{
+  display: grid;
+  place-items: center;  
 }
 
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #ffffff;  
+.main {
+  width: 100%;
+}
+
+
+.textContainer{
+  align-self: start;  
+  display: grid;
+  height: 100%;
+  width: 100%;  
+}
+
+
+.videoContainer{  
+  height: 490px;
+  width: 100%;
+  align-self: start;  
+  position: relative;
+  overflow: hidden;
+  
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.video{
+  object-fit: cover;
+  width: 100%;
+  max-height: 490px;
+  height: 100%;  
+}
+
+
+.captionContainer{
+  position: absolute;
+  
+  display: grid;
+  place-self: center;
+  align-self: start;
+  width: 100%;
+  max-width: 1200px;  
+  width: 100%;
+  
+  grid-template-rows: auto auto auto;  
+  
+}
+
+.cont{
+  max-width: 1200px;  
+}
+
+.captionContainer h1{    
+  margin-top: 100px;
+  padding-left: 10px;
+  display: grid;  
+  font-size: 3.8fr;
+  font-family: RubikBold;  
+  color: #ffffff;  
+  
+}
+
+.cap2{
+  margin-top: 20px;
+  display: grid;
+  font-family: IbmPlexMonoRegular;
+  color: #ffffff;    
+  font-size: 24px; 
+  padding-left: 10px;
+}
+
+.cap3{
+  margin-top: 50px;
+  padding-left: 10px;
+  
 }
 
 .orderBtn{
@@ -54,129 +127,35 @@ a {
 
 }
 
-
-
-.wrapper {
-  height: 100vh;
-  display: flex;  
-  flex-direction: column;
-}
-
-.header{
-  height: 110px;  
-  min-height: 110px;
-}
-
-
-.main {
-  flex: 1;
-  
-}
-
-.menuLink{
-  color: #ffffff;
-}
-
-#leftFooter{float: left; padding-left: 20px; padding-top: 10px;}
-#rightFooter{float: right; padding-top: 30px; padding-right: 20px;}
-.footer {
-  min-height: 80px;  
-  background-color: #0A2235;
-  color: #ffffff;
-}
-.centerFooter {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.greenLink{
-  color: #5ea57a;  
-  font-weight: bold;
-}
-
-.video-container {
-  height: 400px;
+.whatwedo{  
+  display: grid;
+  max-width: 1200px;
+  place-self: center;
+  align-self: start;
   width: 100%;
-  position: relative;  
-  
-}
-
-.video-container video {
-width: 100%;
-height: 100%;
-position: absolute;
-object-fit: cover;
-z-index: 0;
-}
-
-/* Just styling the content of the div, the *magic* in the previous rules */
-.video-container .caption {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: relative;      
-  
+  padding-left: 20px;
 }
 
 
-.caption h1{
-  
-  margin: 0 auto;
-  width: 90%;  
-  height: 50%;   
-  font-family: RubikBold;
-  
-  color: #ffffff;  
-
-  
-}
-
-
-.cap2{
-  margin: 0 auto;
-  width: 90%; 
-  height: 30%;
-  font-family: IbmPlexMonoRegular;
-  color: #ffffff;    
-  font-size: 1.1rem;   
-  padding-top: 20px;
-}
-
-.cap3{
-  margin: 0 auto;  
-  width: 90%;    
-  height: 20%;
-}
-
-
-/* Что мы делаем */
-
-.whatwedo {
-  margin: 0 auto;  
-  padding-top: 20px;  
-  width: 67%;
-}
-
-
-
-.whatwedo h1 {
+.h1black{
+  font-family: RubikBold;  
   color: black;
-  font-family: RubikBold;
-  padding-top: 40px;
+  padding-top: 50px;
 }
+
 
 
 .offerlist
 {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   width: 90%;
   margin: 0 auto;  
   padding-top: 40px;
+  grid-template-columns: repeat(auto-fit, 350px);
 }
 
 .offerItem{
-  width: 300px;  
+  
   font-family: RubikMedium;
   padding-top: 40px;  
 }
@@ -192,20 +171,101 @@ z-index: 0;
 }
 
 
-/* Медиа */
-@media (min-width: 600px) {
-  .caption h1 {font-size: 40px; }  
-  .whatwedo {
-    width: 90%;
+#leftFooter{float: left; padding-left: 20px; padding-top: 10px;}
+#rightFooter{float: right; padding-top: 30px; padding-right: 20px;}
+.footer {
+  min-height: 80px;  
+  background-color: #0A2235;
+  color: #ffffff;
+}
+
+.SiteContainerBlock{  
+  display: grid;
+  max-width: 1200px;
+  place-self: center;
+  align-self: start;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.hrline{
+  display: grid;
+  place-self: center;
+  align-self: start;
+  width: 100%;
+  border-top: solid 1px #0A2235;
+}
+
+.columnContainer{
+  display: grid;
+  grid-template-areas: 
+  'A B C'
+  'D B E'
+  'F B G'
+  'H B K'
+  'J B I';  
+}
+
+
+.prepareBlock{
+  grid-area: A;  
+  height: 250px;
+}
+
+.prepareImg{
+  grid-area: C;  
+  justify-self: center;
+}
+
+.stagesBlock{
+  grid-area: B;  
+  padding-top: 100px;
+  justify-self: center;  
+
+}
+
+.researchImg{
+  grid-area: D;  
+  justify-self: center;
+  margin-top: 100px;
+}
+
+.researchBlock{
+  grid-area: E;  
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.planBlock{
+grid-area: F;
+margin-top: 40px;
+}
+
+.planImg{
+  grid-area: G;
+  justify-self: center;
   }
-  
-}
 
-@media (min-width: 1200px) {
-  .caption h1 {font-size: 2.8rem; width: 67%;}
-  .cap2 {width: 67%; font-size: 2rem;}
-  .cap3 { width: 67%;}
-  .whatwedo {
-    width: 67%;  }
+  .injectImg{
+    grid-area: H;
+  }
 
-}
+  .injectBlock{
+    grid-area: K;
+    margin-left: 50px;
+  }
+
+  .supportImg{
+    grid-area: I;
+  }
+
+  .supportBlock{
+    grid-area: J;
+  }
+
+
+  .columnContainer:nth-child(2) h3{
+    font-family: RubikMedium;
+    
+    padding-top: 100px;
+  }

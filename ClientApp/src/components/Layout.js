@@ -8,8 +8,7 @@ export class Layout extends Component {
 
   render() {
     return (
-      <div>
-        <div className='wrapper'>
+      <div className='layout'>
           <div className='header'>
             <NavMenu />
           </div>
@@ -17,14 +16,8 @@ export class Layout extends Component {
             {this.props.children}
           </div>
           <Footer />
-        </div>
       </div>
     );
   }
 }
 
-/*
-
-
-
-*/

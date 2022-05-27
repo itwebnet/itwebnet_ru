@@ -244,23 +244,29 @@ margin-top: 40px;
 .planImg{
   grid-area: G;
   justify-self: center;
+  margin-top: 20px;
   }
 
   .injectImg{
     grid-area: H;
+    justify-self: center;
   }
 
   .injectBlock{
     grid-area: K;
     margin-left: 50px;
+    margin-top: 40px;
   }
 
   .supportImg{
     grid-area: I;
+    margin-top: 60px;
+    justify-self: center;
   }
 
   .supportBlock{
     grid-area: J;
+    margin-top: 60px;
   }
 
 

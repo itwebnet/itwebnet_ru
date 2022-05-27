@@ -42,7 +42,7 @@ export class Home extends Component {
     <OfferItem name="Обучение" img={develop} title="Курсы по программированию"/>
   </div>
       </div>
-      <SiteContainerBlock>
+      <SiteContainerBlock isgrey>
         <HowWeWork />
       </SiteContainerBlock>
 </div>

@@ -1,0 +1,61 @@
+/* Provide sufficient contrast against white background */
+@font-face {
+	font-family: 'RubikBold';
+	src: url(../src/fonts/RubikBold.ttf);
+}
+
+@font-face {
+	font-family: 'RubikMedium';
+	src: url(../src/fonts/RubikMedium.ttf);
+}
+
+@font-face {
+	font-family: 'IbmPlexMono';
+	src: url(../src/fonts/IbmPlexMono.ttf);
+}
+
+@font-face {
+	font-family: 'IbmPlexMonoRegular';
+	src: url(../src/fonts/IBMPlexMono-Regular.ttf);
+}
+
+html,
+body {
+	font-family: IbmPlexMonoRegular;
+	
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#root {
+	height: 100%;
+	min-height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;	
+}
+
+.header {
+	min-height: 105px;
+}
+.footer {
+	min-height: 80px;
+	background-color: #0a2235;
+	color: #ffffff;
+}
+
+.content {
+	flex-grow: 1;
+}
+
+
+
+
+
+
+
+

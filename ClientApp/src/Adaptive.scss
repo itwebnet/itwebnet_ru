@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1250px) {
+
+	.feature_step > div > div > img {
+		max-width: 300px;		
+	}
+
+	.stImage{
+		height: 1260px;
+	}
+
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+	.serv {
+		width: 300px;
+	}
+
+	.feature_step > div > div > img{
+		max-width: 250px;
+	}
+	.stImage{
+		height: 1060px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.bannertext .container h1 {
+		font-size: 36px;
+	}
+
+	.homestyle h1 {
+	}
+
+	.description {
+		font-size: 22px;
+		padding-bottom: 50px;
+	}
+
+	.feature_step > div > div > img{
+		max-width: 150px;
+	}
+	.stImage{
+		height: 700px;
+		padding-top: 60px;
+	}	
+
+	.feature_step h2 {
+		font-size: 20px;
+	}
+
+	.serv {
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

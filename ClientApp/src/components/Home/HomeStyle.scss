@@ -1,0 +1,165 @@
+.video {
+	object-fit: cover;
+	width: 100%;
+	height: 500px;
+	position: absolute;
+}
+
+.videoContainer {
+	height: 500px;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+}
+
+.bannertext {
+	color: #fff;
+	z-index: 100;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	space-between: 20px;
+}
+
+.bannertext .container h1 {
+	font-size: 44px;
+	font-family: 'RubikBold';
+	padding-bottom: 20px;
+}
+
+.description {
+	font-family: 'IbmPlexMono';
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 100px;
+}
+
+.main {
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 10px 280px;
+}
+
+.btnOrder {
+	background-color: #3777bc;
+	padding: 15px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	font-family: 'IbmPlexMono';
+	font-weight: bold;
+}
+
+.inner > h1 {
+	font-size: 56px;
+	color: #fff;
+}
+
+.homestyle h1 {
+	font-family: 'RubikMedium';
+	font-weight: bold;
+	padding-top: 50px;
+}
+
+.infBlock {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.serv {
+	width: 350px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.serv h2 {
+	font-family: 'RubikMedium';
+	padding-top: 30px;
+}
+
+.howdo {
+	background-color: #f6f6f6;
+	border-top: solid 1px rgb(213, 211, 211);
+}
+
+.howdocontainer {
+	border: solid 1px red;
+}
+
+.stImage {
+	position: absolute;
+	left: 50%;
+	padding-top: 140px;
+}
+
+.feature_step {
+	display: flex;
+	justify-content: space-around;
+}
+
+.feature_step > div {
+	width: 30%;
+	display: flex;
+	align-items: center;
+}
+
+.feature_step > div > div {
+	margin: 0 auto;
+}
+
+.feature_step > div > div > img {
+	max-height: 330px;
+	max-width: 400px;
+}
+
+.feature_step h2 {
+	font-family: 'RubikMedium';
+}
+
+.worker {
+	border-top: solid 1px rgb(221, 218, 218);
+	background-color: #f6f6f6;
+}
+
+.worker > div > div:last-child > div:nth-child(1) > div {
+	padding-top: 70px;
+}
+
+.worker > div > div:nth-child(5) > div:nth-child(2) > div {
+	padding-bottom: 40px;
+}
+
+.carouselItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 500px;
+}
+
+* {
+	min-height: 0;
+	min-width: 0;
+}
+.wrapper-carousel {
+	display: flex;
+}
+
+.wrapper-carousel img {
+	display: block;
+	max-width: 20vmin;
+	margin: 0 auto;
+}
+
+.btnNext{
+	min-width: 50px;
+	height: 50px;
+}
